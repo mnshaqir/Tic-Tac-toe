@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tic Tac Toe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+table {
+	margin:auto;
+	border-collapse:collapse;
+}
+td {
+	width:100px;
+	text-align:center;
+	font-size:400%;
+   }
+tr {
+	height:100px;
+   }
+#topleft, #topmid, #midleft, #midmid {
+	border-right: 5px solid black;
+	border-bottom: 5px solid black;
+	}
+#topright, #midright {
+	border-bottom: 5px solid black;
+	}
+#botleft, #botmid {
+	border-right: 5px solid black;
+	}
+</style>
+</head>
+<body>
+<h1 style="text-align:center;">Tic Tac Toe</h1>
+
+<table>
+<tr><td id="topleft"  onclick="AddToTopLeft();"></td>
+	<td id="topmid"   onclick ="AddToTopMid();" ></td>
+	<td id="topright" onclick="AddToTopRight();"></td></tr>
+	
+<tr><td id="midleft"  onclick="AddToMidLeft();"></td>
+	<td id="midmid"   onclick="AddToMidMid();"></td>
+	<td id="midright" onclick="AddToMidRight();"></td></tr>
+	
+<tr><td id="botleft"  onclick="AddToBotLeft();"></td>
+	<td id="botmid"   onclick="AddToBotMid();"></td>
+	<td id="botright" onclick="AddToBotRight();"></td></tr>
+</table>
+
+<script>
+var XO = "O";
+
+function AddToTopLeft()
+{
+	var theCell = document.getElementById("topleft");
+	
+	theCell.innerHTML = XO;
+	
+	if (XO == "O") {
+		XO = "X";
+	}
+	else {
+		XO = "O";
+	}
+}
+
+function AddToTopMid()
+{
+	var theCell = document.getElementById("topmid");
+	
+	theCell.innerHTML = XO;
+	
+	if (XO == "O") {
+		XO = "X";
+	}
+	else {
+		XO = "O";
+	}
+}
+
+function AddToTopRight()
+{
+	var theCell = document.getElementById("topright");
+	
+	theCell.innerHTML = XO;
+	
+	if (XO == "O") {
+		XO = "X";
+	}
+	else {
+		XO = "O";
+	}
+}
+
+
+function AddToMidLeft()
+{
+	var theCell = document.getElementById("midleft");
+	
+	theCell.innerHTML = XO;
+	
+	if (XO == "O") {
+		XO = "X";
+	}
+	else {
+		XO = "O";
+	}
+}
+
+
+function AddToMidMid()
+{
+	var theCell = document.getElementById("midmid");
+	
+	theCell.innerHTML = XO;
+	
+	if (XO == "O") {
+		XO = "X";
+	}
+	else {
+		XO = "O";
+	}
+}
+
+
+function AddToMidRight()
+{
+	var theCell = document.getElementById("midright");
+	
+	theCell.innerHTML = XO;
+	
+	if (XO == "O") {
+		XO = "X";
+	}
+	else {
+		XO = "O";
+	}
+}
+
+
+function AddToBotLeft()
+{
+	var theCell = document.getElementById("botleft");
+	
+	theCell.innerHTML = XO;
+	
+	if (XO == "O") {
+		XO = "X";
+	}
+	else {
+		XO = "O";
+	}
+}
+
+
+function AddToBotMid()
+{
+	var theCell = document.getElementById("botmid");
+	
+	theCell.innerHTML = XO;
+	
+	if (XO == "O") {
+		XO = "X";
+	}
+	else {
+		XO = "O";
+	}
+}
+
+
+function AddToBotRight()
+{
+	var theCell = document.getElementById("botright");
+	
+	theCell.innerHTML = XO;
+	
+	if (XO == "O") {
+		XO = "X";
+	}
+	else {
+		XO = "O";
+	}
+}
+
+</script>
+</body>
+</html>
+
